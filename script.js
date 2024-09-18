@@ -17,7 +17,7 @@ class Dog extends Animal {
 		super(species)
 	}
 	makeSound(){
-		console.log(`The ${this.species} barks`)
+		console.log(`The ${this.species} makes a sound`)
 	}
 	bark(){
 		console.log('woof')
@@ -29,7 +29,7 @@ class Cat extends Animal {
 		super(species)
 	}
 	makeSound(){
-		console.log(`The ${this.species} meows`)
+		console.log(`The ${this.species} makes a sound`)
 	}
 	purr(){
 		console.log("purr")
@@ -37,13 +37,13 @@ class Cat extends Animal {
 }
 
 // Do not change the code below this line
-window.Animal = Animal;
-window.Dog = Dog;
-window.Cat = Cat;
-// let dog=new Dog("Golden Retriever")
-// dog.makeSound()
-// dog.bark()
+// window.Animal = Animal;
+// window.Dog = Dog;
+// window.Cat = Cat;
+let dog=new Dog("Golden Retriever")
+dog.makeSound()
+dog.bark()
 
-// let cat=new Cat("Persian")
-// cat.makeSound()
-// cat.purr()
+let cat=new Cat("Persian")
+cat.makeSound()
+cat.purr()
